@@ -5,10 +5,13 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <script src="https://cdn.tailwindcss.com"></script>
-
+    
 </head>
 <body>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script type="module" src="./script.js"></script>
+    <script type="module" src="./ciclos.js"></script>
+    
     <header class="bg-gradient-to-r from-[#614385] to-[#516395] w-full py-5 mb-10 px-20">
         <h2 class="text-white text-xl container mx-auto">Gestió de cicles</h2>
     </header>
@@ -44,7 +47,7 @@
 
                 <input type="hidden" value="-1" id="editCicle"/>
                 
-                <button onClick="afegirCicle()" class="text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm w-full sm:w-auto px-5 py-2.5 text-center">Afegir cicle</button>
+                <button onclick="afegirCicle()" class="text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm w-full sm:w-auto px-5 py-2.5 text-center">Afegir cicle</button>
             </div>
 
             <div class="mb-40" id="form_cicles">
@@ -72,7 +75,7 @@
                   </div>
                 </div>
                 
-                <button onClick="afegirModul()" class="text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm w-full sm:w-auto px-5 py-2.5 text-center">Afegir mòdul</button>
+                <button onclick="afegirModul()" class="text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm w-full sm:w-auto px-5 py-2.5 text-center">Afegir mòdul</button>
             </div>   
         </div>
 
@@ -83,7 +86,7 @@
     </main>
 
     <footer class="fixed bottom-0 left-0 z-20 p-4 w-full bg-white border-t border-gray-200 shadow md:flex md:items-center md:justify-between md:p-6">
-        <span class="text-sm text-gray-500 sm:text-center">© 2022 <a href="#" class="hover:underline">NomCognom</a>. All Rights Reserved.
+        <span class="text-sm text-gray-500 sm:text-center">© 2022 <a href="#" class="hover:underline">Raul Rufo</a>. All Rights Reserved.
         </span>
         <ul class="flex flex-wrap items-center mt-3 text-sm text-gray-500 sm:mt-0">
             <li>
@@ -100,6 +103,5 @@
             </li>
         </ul>
     </footer>
-    <script src="script.js"></script>
 </body>
 </html>
