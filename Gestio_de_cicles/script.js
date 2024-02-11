@@ -24,6 +24,7 @@ function afegirCicle() {
     netejarFormularis();
     document.getElementById("editCicle").value = -1;
 }
+console.log(afegirCicle())
 
 // La función afegirModul ahora crea instancias de Modul y las añade a los cicles
 function afegirModul() {
@@ -39,5 +40,6 @@ function afegirModul() {
     printLlistat(llistatCicles);
     netejarFormularis();
 }
+console.log(afegirModul())
 
 // Las demás funciones pueden permanecer igual, con algunas adaptaciones menores si es necesario para trabajar con instancias de las clases.
